@@ -1,0 +1,74 @@
+text normalization means coverting raw text to clean and neat test
+
+
+
+
+
+    *converting strings into lower case using lower
+   
+    ---> with open('data.txt', 'r') as file # keep data.txt in autosave # opening file syntax
+            data = file.read.lower() #file to strings (read method return strings)
+         print(data)
+
+         with open('data.txt',''w') as file
+            file.write(data) #accepts string and returns number of characters(means len)
+
+
+
+    *removing punctuations 
+   
+    ---> import string
+         result = string.punctuation
+         result
+
+         with open('data.txt', 'r') as file
+            data = file.read()
+            for char in results:
+               if char in result:
+                  data = data.replace(char,'')
+         #print(data)
+         with open('data.txt', 'w') as file
+            
+
+      *removing special characters from string
+
+      ---> with open('data.txt', 'r') as file:
+            data = file.read() #file to strings (read method return strings)
+               for char in data:
+                  if not char.isalnum() and not ord(char) == 32:
+                  data = data.replace(char, '')
+            print(data)
+            print()
+
+         print(data)
+
+
+      * handling EMOJIS or removing EMOJIS (easy)
+      --> dont use this in spam detections means not required
+      --> uses in sentiment analysis
+         import emoji # !pip install emoji
+         s = 'Hi 😍🤷‍♂️🎶😜🥰🥸👻🙈🤌'
+         print(emoji.demojize(s), sep = '\n')
+
+
+      * removing empty spaces more than one ('  ') and wrong spellings like 'okkaay' instead 'okay'
+      ---> string.
+
+      *contractions
+
+      *correcting the words
+
+
+        start
+        |
+        |
+        converting strinfs lower case
+        |
+        |
+        punctuation(yes/no)
+        |
+        |
+        if yes
+            continues punctuations
+         else:
+            skip both
